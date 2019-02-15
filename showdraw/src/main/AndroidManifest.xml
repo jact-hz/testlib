@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.pinming.cadshow.library"
+    android:versionCode="100"
+    android:versionName="1.0.0">
+
+    <!-- 创建桌面快捷方式,无富媒体消息则不需要 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 保存富媒体消息需要,无富媒体消息则不需要 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name="cn.pinming.cadshow.cad.TeighaDwgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CAD_AppTheme.Base"
+            />
+
+        <activity
+            android:name="cn.pinming.cadshow.bim.MobileSurfaceActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/CAD_AppTheme.Base"/>
+
+        <activity
+            android:name="cn.pinming.cadshow.graffiti.GraffitiActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

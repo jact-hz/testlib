@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.pinming.cadshow.bim.custormview.TEDrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.pinming.cadshow.bim.custormview.CustormFrameLayout
+                android:id="@+id/fl_custorm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="16dp"
+                    android:src="@drawable/cad_op_small"/>
+
+            </cn.pinming.cadshow.bim.custormview.CustormFrameLayout>
+
+            <FrameLayout
+                android:id="@+id/side_view"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/black">
+
+                <com.weqia.component.rcmode.recyclerView.LuRecyclerView
+                    android:id="@+id/rc_drawer_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/showdraw_drawer_lefi_bg"/>
+            </FrameLayout>
+
+        </cn.pinming.cadshow.bim.custormview.TEDrawerLayout>
+    </FrameLayout>
+
+    <cn.pinming.cadshow.moveview.MoveImageView
+        android:id="@+id/iv_cad_range_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/cad_range_arrow"
+        android:visibility="gone"/>
+
+
+    <include layout="@layout/cad_op_view_reused_topbanner"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/showdraw_bottom_op_height"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_cad_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cad_bottom_banner"/>
+
+        <LinearLayout
+            android:id="@+id/ll_count_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cad_bottom_banner"
+            android:orientation="horizontal"
+            android:padding="2px"
+            android:visibility="gone">
+
+            <LinearLayout style="@style/cad_count_contain">
+
+                <TextView
+                    android:id="@+id/tv_left_name"
+                    style="@style/cad_count_text_name"/>
+
+                <TextView
+                    android:id="@+id/tv_left_value"
+                    style="@style/cad_count_text_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/cad_count_contain">
+
+                <TextView
+                    android:id="@+id/tv_right_name"
+                    style="@style/cad_count_text_name"/>
+
+                <TextView
+                    android:id="@+id/tv_right_value"
+                    style="@style/cad_count_text_value"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
+

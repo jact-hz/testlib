@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+//    packagingOptions {
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/NOTICE.txt'
+//    }
+//
+//    lintOptions {
+//        abortOnError false
+//    }
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //    annotationProcessor project(':compile')
+    //    api project(':WqComponent')
+    //    annotationProcessor 'cn.pinming.library:compile:1.0.2'
+    //    compile 'com.android.support:appcompat-v7:25.3.1'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:design:26.1.0'
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api 'com.forward.androids:androids:1.1.8'
+    api 'org.greenrobot:eventbus:3.0.0'
+    api 'com.squareup.okhttp3:okhttp:3.9.0'
+    api 'com.alibaba:fastjson:1.1.68.android'
+    implementation files('libs/apache-ant-zip.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+}
+
+group 'cn.pinming.library'
+version '1.0.0'
+def artifactId = "cadshow"
+
+//上传到nexus
+uploadArchives {
+    repositories {
+        mavenDeployer {
+//            repository(url: "http://47.97.21.18:8081/nexus/content/repositories/thirdparty/") {
+//                authentication(userName: "admin", password: "abc#001")
+//            }
+            def deployPath = file(getProperty('aar.deployPath'))
+            repository(url: "file://${deployPath.absolutePath}")
+            pom.version = "$project.version"
+            pom.artifactId = "$artifactId"
+            pom.groupId = "$project.group"
+        }
+    }
+}
+
+// 源代码一起打包
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.sourceFiles
+}
+artifacts {
+    archives androidSourcesJar
+}

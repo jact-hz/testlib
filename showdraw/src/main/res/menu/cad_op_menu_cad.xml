@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/cad_op_bimshanchu"
+        android:title="@string/menu_bind"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_modify"
+        android:icon="@drawable/cad_op_wenzixiugai"
+        android:title="@string/menu_bind"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_share"
+        android:title="分享"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_right"
+        android:icon="@drawable/cad_op_big"
+        android:title="@string/menu_bind"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/right_cancel"
+        android:title="取消"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/right_save"
+        android:title="确定"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="showdraw_main_color">#00b589</color>
+
+    <color name="showdraw_title_bg">@color/showdraw_main_color</color>
+    <color name="showdraw_drawer_lefi_bg">#15483c</color>
+    <color name="drawer_left_cell_div">#226e5b</color>
+
+    <color name="bim_bottom_banner">#CC000000</color>
+    <color name="cad_bottom_banner">#25312f</color>
+    <color name="cad_pop_color">#5b9386</color>
+
+
+    <color name="colorTransBg">#26000000</color>
+
+    <color name="graffiti_btn_pressed_color">#dfffd943</color>
+
+    <color name="graffiti_btn_text">#000000</color>
+
+
+    <color name="red">#f5330f</color>
+    <color name="yellow">#edb101</color>
+    <color name="green">#2ed882</color>
+    <!--<color name="blue">#5283ea</color>-->
+</resources>

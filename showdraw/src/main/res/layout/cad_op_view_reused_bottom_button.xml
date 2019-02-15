@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cell_all"
+    android:layout_width="match_parent"
+    android:layout_height="47dp">
+
+    <TextView
+        android:id="@+id/tv_cad_range"
+        style="@style/cad_bottom_op_menu_style"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/cad_op_selor_space"
+        android:text=""
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_viewport"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cad_op_zuoshitu"
+        android:visibility="gone" />
+</FrameLayout>
+

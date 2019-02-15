@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_roaming_control"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="50dp"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:visibility="visible">
+
+    <cn.pinming.cadshow.bim.custormview.RockerView
+        android:id="@+id/rv_rocker"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/iv_up"
+        style="@style/cad_iv_roaming_direction"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/cad_op_xiangshang" />
+
+
+    <ImageView
+        android:id="@+id/iv_down"
+        style="@style/cad_iv_roaming_direction"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/cad_op_xiangxia" />
+
+</RelativeLayout>

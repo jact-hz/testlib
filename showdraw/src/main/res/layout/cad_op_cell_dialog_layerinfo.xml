@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_layinfo_content"
+        style="@style/cad_cell_list_item_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cad_pop_color"
+        android:minHeight="@dimen/showdraw_bottom_op_height">
+
+        <com.weqia.utils.view.CommonImageView
+            android:id="@+id/iv_catelog_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_catelog_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ib_catelog_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/default_interval"
+            android:background="@null"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cad_op_sel_catelog_select" />
+    </LinearLayout>
+
+    <com.weqia.utils.view.CommonImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:scaleType="fitXY"
+        android:src="@drawable/cad_dv_line_pop" />
+
+</LinearLayout>

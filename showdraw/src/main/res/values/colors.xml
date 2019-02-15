@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#383838</color>
+    <color name="transparent">#00000000</color>
+    <color name="rc_bg_color">#f5f5f5</color>
+    <color name="rc_color1">#00a87e</color>
+    <color name="rc_color2">@color/rc_color1</color>
+    <color name="rc_color3">@color/rc_colorAccent</color>
+    <color name="rc_color4">#fd9931</color>
+    <color name="rc_colorAccent">#FF4081</color>
+    <color name="rc_dark">#5e5656</color>
+    <color name="rc_grey">#ff888888</color>
+    <color name="grey">#ff888888</color>
+    <color name="translucent_black">#77000000</color>
+    <color name="tx_bra">#f5f5f5</color>
+    <color name="grey_task">#999999</color>
+
+    <!-- list -->
+    <color name="default_plain_text_color">#383838</color>
+    <color name="default_button_text_color">#000000</color>
+    <color name="list_item_select_text_color">#44adff</color>
+    <color name="list_itel_location_time">#fc802e</color>
+
+    <color name="underline_color">#576b95</color>
+
+    <!--dlg_color-->
+    <color name="dialog_bar_color">#1a5da2</color>
+    <color name="dialog_bar_color_grey">#d7d7d7</color>
+    <color name="dialog_positive_color">#576b95</color>
+    <color name="dialog_nature_color">#576b95</color>
+    <color name="dialog_negative_color">#576b95</color>
+    <color name="dialog_bar_time_color">@android:color/black</color>
+
+
+    <!-- viewpager -->
+    <color name="viewpager_line_color">#0093dd</color>
+    <color name="viewpager_line_selected_color">#0093dd</color>
+    <color name="viewpager_text_color">#6c7072</color>
+    <color name="viewpager_text_selected_color">#383838</color>
+    <color name="viewpager_divider_color">#96969663</color>
+    <color name="talk_img_txt">#737373</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="task_list_cell_iv">#b3b3b3</color>
+
+    <color name="main_color_dark">#5a8b7f</color>
+    <color name="main_color">#00b589</color>
+    <color name="main_color_sel">#00a87e</color>
+    <color name="sel_color">#d7f5ed</color>
+
+    <color name="state_late">#fc6e42</color>
+
+    <color name="blue_font">@color/main_color</color>
+    <color name="black_font">#383838</color>
+    <color name="grey_font">#ff888888</color>
+
+    <color name="wq_title_bg">#fafafa</color>
+    <color name="wq_title_bg_sel">#ebebeb</color>
+
+    <color name="bg_topright_btn">@color/main_color</color>
+    <color name="bg_topright_btn_sel">@color/main_color</color>
+    <color name="bg_setting_color">@color/bg_color</color>
+    <color name="default_list_bg_pressed">#e0e0e0</color>
+    <color name="bg_color">#f0f5f4</color>
+    <color name="bg_color_new">#f0f5f4</color>
+    <color name="title_text">#383838</color>
+
+    <color name="half_alpha_black">#7f000000</color>
+
+    <color name="cal_1">#000000</color>
+    <color name="cal_2">#999999</color>
+    <color name="cal_3">@color/main_color</color>
+    <color name="hb_click">#fd9931</color>
+    <color name="qr_code_groung">#f5f5f5</color>
+
+    <color name="setting_div">#e8e8e8</color>
+
+    <color name="talk_me_link_color">#0af7c0</color>
+
+    <color name="newui_blue">@color/main_color</color>
+
+    <color name="blue">@color/main_color</color>
+    <color name="kq_blue">@color/main_color</color>
+    <color name="wq_tab_text">#999999</color>
+
+    <color name="most_new_blue">@color/main_color</color>
+    <color name="grey_sel">@color/main_color_sel</color>
+
+    <color name="line_grey">#e1e1e1</color>
+
+    <color name="gray_color">#888888</color>
+
+    <color name="bg_color_2">#fafafa</color>
+    <color name="new_cs_project_right">#737373</color>
+
+    <color name="blue_login">@color/main_color</color>
+    <color name="divider_line">#d5d5d5</color>
+    <color name="right_text_color">#ffb5b5b6</color>
+    <color name="work_black">#b2b2b2</color>
+
+    <color name="search_text_color">#595959</color>
+    <color name="gray">#ababab</color>
+
+    <color name="bg_links">#ececec</color>
+    <color name="bg_links_sel">#cccccc</color>
+
+    <color name="delete_text">#ff6817</color>
+
+    <color name="loc_blue">@color/main_color_dark</color>
+    <color name="dlg_bg_white">#f0f1f5</color>
+</resources>

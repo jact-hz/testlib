@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_bind">绑定</string>
+
+    <!-- cad fuc -->
+    <string name="cad_fuc_mark">标注</string>
+    <string name="cad_fuc_length">长度测量</string>
+    <string name="cad_fuc_area">面积测量</string>
+    <string name="cad_fuc_point">坐标测量</string>
+    <string name="cad_fuc_space">布局空间</string>
+
+    <!-- cad pbim -->
+    <string name="cad_fuc_window">视口</string>
+    <string name="cad_fuc_roam">漫游</string>
+    <string name="cad_fuc_rang">测距</string>
+    <string name="cad_fuc_anote">标注分享</string>
+    <string name="cad_fuc_down_file">下载资源文件</string>
+    <string name="cad_fuc_cullplanes_open">打开剖切面</string>
+    <string name="cad_fuc_cullplanes">关闭剖切面</string>
+
+    <string-array name="cad_fucnc" translatable="false">
+        <!--<item>@string/cad_fuc_mark</item>-->
+        <item>@string/cad_fuc_length</item>
+        <item>@string/cad_fuc_area</item>
+        <item>@string/cad_fuc_point</item>
+        <item>@string/cad_fuc_space</item>
+    </string-array>
+
+    <string-array name="cad_pbim">
+        <item>@string/cad_fuc_window</item>
+        <item>@string/cad_fuc_roam</item>
+        <!--<item>@string/cad_fuc_anote</item>-->
+        <!--<item>@string/cad_fuc_down_file</item>-->
+    </string-array>
+
+    <string name="graffiti_moving_pic">单指移动、双指缩放</string>
+    <string name="graffiti_clear_screen">清屏</string>
+    <string name="graffiti_cant_undo_after_clearing">清屏后不可撤销</string>
+    <string name="graffiti_saving_picture">保存图片</string>
+    <string name="graffiti_enter">确定</string>
+    <string name="graffiti_cancel">取消</string>
+    <string name="graffiti_success">成功</string>
+    <string name="graffiti_failed">失败</string>
+
+    <string name="graffiti_edit">编辑</string>
+    <string name="graffiti_remove">移除</string>
+    <string name="graffiti_top">置顶</string>
+</resources>

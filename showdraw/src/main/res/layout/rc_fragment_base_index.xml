@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rc_bg_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/rc_view_list_divider"
+        android:background="@color/rc_grey" />
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <!--下拉刷新控件-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.weqia.component.rcmode.recyclerView.LuRecyclerView
+            android:id="@+id/rcListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarSize="0dp"
+            android:scrollbarThumbVertical="@drawable/rc_scrollbar_vertical_thumb"
+            android:scrollbarTrackVertical="@drawable/rc_scrollbar_vertical_track" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

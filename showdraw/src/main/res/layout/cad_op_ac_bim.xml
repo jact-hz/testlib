@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/cad_op_view_reused_topbanner" />
+
+        <com.weqia.component.rcmode.recyclerView.LuRecyclerView
+            android:id="@+id/rc_bim_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/showdraw_bottom_op_height"
+            android:layout_gravity="bottom"
+            android:background="@color/cad_bottom_banner"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/fabBGLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransBg"
+            android:visibility="gone" />
+        <ProgressBar
+            android:id="@+id/modeload_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="110dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/modeload_progress"/>
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="90dp"
+            android:visibility="gone"
+            android:textColor="@color/gray_color"
+            />
+        <TextView
+            android:id="@+id/tv_select"
+            style="@style/btn_flow"
+            android:background="@drawable/cad_op_select_tv"
+            android:text="选择"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/btn_flow"
+            android:background="@drawable/cad_op_select_tv"
+            android:text="定位"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_msg"
+            style="@style/btn_flow"
+            android:background="@drawable/cad_op_select_tv"
+            android:text="列表"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/fab"
+            style="@style/btn_flow"
+            android:background="@drawable/cad_op_select_add" />
+
+        <cn.pinming.cadshow.bim.custormview.TEDrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.pinming.cadshow.bim.custormview.CustormFrameLayout
+                android:id="@+id/fl_custorm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--                <EGLviewview
+                    android:id="@+id/surfaceGLES"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    />-->
+
+                <FrameLayout
+                    android:id="@+id/fl_bim_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="16dp"
+                    android:src="@drawable/cad_op_small"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_top_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/cad_op_cad_tv_bg"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="楼层选择"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tv_top_gradle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|left"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/cad_op_cad_tv_bg"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="构件选择"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </cn.pinming.cadshow.bim.custormview.CustormFrameLayout>
+
+            <FrameLayout
+                android:id="@+id/side_view"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/black">
+
+                <com.weqia.component.rcmode.recyclerView.LuRecyclerView
+                    android:id="@+id/rc_drawer_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/showdraw_drawer_lefi_bg" />
+            </FrameLayout>
+
+        </cn.pinming.cadshow.bim.custormview.TEDrawerLayout>
+    </FrameLayout>
+</FrameLayout>
