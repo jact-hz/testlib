@@ -3,8 +3,6 @@ package com.example.ccbim.ccbimlib;
 
 import android.support.multidex.MultiDexApplication;
 
-import cn.pinming.modelsdk.CCBimSdkUtil;
-
 /**
  * Created by lgf on 2019/1/22.
  */

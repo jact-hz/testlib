@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btOpenCad.setOnClickListener(this);
         btFindState = findViewById(R.id.bt_find_state);
         btFindState.setOnClickListener(this);
+
     }
 
     @Override
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.bt_find_state:
-                //Toast.makeText(this, CCBimSdkUtil.findConvertInfo(this, "a9dd00a0-76a6-2c91-8083-001f60951fc9"), Toast.LENGTH_LONG).show();
+//                Toast.makeText(this, CCBimSdkUtil.findConvertInfo(this, "a9dd00a0-76a6-2c91-8083-001f60951fc9"), Toast.LENGTH_LONG).show();
                 break;
         }
     }
