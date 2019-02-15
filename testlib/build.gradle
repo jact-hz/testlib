@@ -22,17 +22,19 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:design:26.1.0'
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api 'com.forward.androids:androids:1.1.8'
     api 'org.greenrobot:eventbus:3.0.0'
-//    api 'com.android.support:appcompat-v7:26.1.0'
-//    testImplementation 'junit:junit:4.12'
-//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.squareup.okhttp3:okhttp:3.9.0'
+    api 'com.alibaba:fastjson:1.1.68.android'
+    implementation files('libs/apache-ant-zip.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
 }
 
 group 'cn.pinming.library'
-version '1.0.1'
+version '1.0.2'
 def artifactId = "testlib"
 
 //上传到nexus

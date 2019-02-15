@@ -31,6 +31,6 @@ dependencies {
 //    implementation 'cn.pinming.library:cadshow:1.0.0'
 //    api project(':showdraw')
 
-        api project(':testlib')
-//    implementation 'cn.pinming.library:testlib:1.0.0'
+//        api project(':testlib')
+    implementation 'cn.pinming.library:testlib:1.0.1'
 }
