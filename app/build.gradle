@@ -32,5 +32,5 @@ dependencies {
 //    api project(':showdraw')
 
 //        api project(':testlib')
-    implementation 'cn.pinming.library:testlib:1.0.3'
+    implementation 'cn.pinming.library:testlib:1.0.4'
 }
