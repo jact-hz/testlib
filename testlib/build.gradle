@@ -34,7 +34,7 @@ dependencies {
 }
 
 group 'cn.pinming.library'
-version '1.0.5'
+version '1.0.6'
 def artifactId = "testlib"
 
 //上传到nexus
